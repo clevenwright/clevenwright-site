@@ -14,16 +14,16 @@ export default function Contact() {
             hello@pyrigen.com
           </a>
           <div className="links">
-            <a href="https://www.linkedin.com/in/cleven-wright" target="_blank" rel="noopener">
+            <a href="https://www.linkedin.com/in/cleven-wright" target="_blank" rel="noopener noreferrer">
               LinkedIn
             </a>
-            <a href="https://www.pyrigen.com" target="_blank" rel="noopener">
+            <a href="https://www.pyrigen.com" target="_blank" rel="noopener noreferrer">
               Pyrigen
             </a>
-            <a href="https://www.soulanthem.ai" target="_blank" rel="noopener">
+            <a href="https://www.soulanthem.ai" target="_blank" rel="noopener noreferrer">
               SoulAnthem
             </a>
-            <a href="https://www.provemastery.ai" target="_blank" rel="noopener">
+            <a href="https://www.provemastery.ai" target="_blank" rel="noopener noreferrer">
               ProveMastery
             </a>
           </div>

@@ -13,28 +13,43 @@ export default function Work() {
           </p>
         </div>
         <div className="ventures reveal">
-          <div className="venture">
+          <a
+            href="https://www.soulanthem.ai"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="venture"
+          >
             <div className="venture-name">
               Soul<span className="accent-a">Anthem</span>
             </div>
             <div className="venture-desc">
               A voice-driven companion for building real self-belief, grounded in the science of self-efficacy.
             </div>
-          </div>
-          <div className="venture">
+          </a>
+          <a
+            href="https://www.provemastery.ai"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="venture"
+          >
             <div className="venture-name">
               Prove<span className="accent-p">Mastery</span>
             </div>
             <div className="venture-desc">
               An AI learning platform that does not just teach. It proves genuine mastery and maintains it over time.
             </div>
-          </div>
-          <div className="venture">
+          </a>
+          <a
+            href="https://www.empoweringk12.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="venture"
+          >
             <div className="venture-name">Empowering K12</div>
             <div className="venture-desc">
               Technology that equips educators to deliver better outcomes for students with disabilities.
             </div>
-          </div>
+          </a>
         </div>
 
         <div className="reveal work-edge">

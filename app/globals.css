@@ -425,8 +425,12 @@ h2 {
 }
 
 .venture {
+  display: block;
   background: var(--ink);
   padding: 36px 30px;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
   transition: background 0.35s;
 }
 
