@@ -491,19 +491,19 @@ h2 {
   z-index: 2;
   margin: 0;
   padding: 0;
-  min-height: clamp(340px, 46vw, 520px);
+  min-height: clamp(380px, 40vw, 700px);
   display: flex;
   align-items: center;
   background-image: linear-gradient(
       to right,
-      rgba(11, 15, 23, 0.94) 0%,
-      rgba(11, 15, 23, 0.72) 42%,
-      rgba(11, 15, 23, 0.3) 70%,
-      rgba(11, 15, 23, 0.55) 100%
+      rgba(11, 15, 23, 0.92) 0%,
+      rgba(11, 15, 23, 0.66) 40%,
+      rgba(11, 15, 23, 0.18) 64%,
+      rgba(11, 15, 23, 0.38) 100%
     ),
     url("/cleven_speaking.jpg");
   background-size: cover;
-  background-position: center right;
+  background-position: center center;
   border-top: 1px solid var(--rule);
   border-bottom: 1px solid var(--rule);
 }

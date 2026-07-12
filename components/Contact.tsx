@@ -10,8 +10,8 @@ export default function Contact() {
               Whether you are investing, hiring, or looking for a partner who has actually done it, I would like to hear from you.
             </p>
           </div>
-          <a href="mailto:admin@pyrigen.com" className="btn btn-primary">
-            admin@pyrigen.com
+          <a href="mailto:hello@pyrigen.com" className="btn btn-primary">
+            hello@pyrigen.com
           </a>
           <div className="links">
             <a href="https://www.linkedin.com/in/cleven-wright" target="_blank" rel="noopener">
