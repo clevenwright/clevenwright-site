@@ -12,8 +12,7 @@ export default function Story() {
           <p>
             I did not take the usual path, and that is the point. I started by knocking on doors, literally,
             selling to whoever would open one. <strong>Nobody hands you anything in that job, so I learned to
-            earn it.</strong> I built a career from there one result at a time, no degree and no shortcut,
-            just an obsession with figuring out what actually works and then teaching it to everyone around me.
+            earn it.</strong> I built a career from there one result at a time, with an obsession for figuring out what actually works and then teaching it to everyone around me.
           </p>
           <p>
             That path carried me from the sales floor to the executive seat, and it taught me the thing most
