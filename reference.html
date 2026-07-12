@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cleven Wright — Founder and CEO, Pyrigen</title>
+<meta name="description" content="Founder and CEO of Pyrigen. 25+ years turning emerging technology into results people can measure, from the front line to the founder's seat.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0B0F17;
+    --ink-2:#0F1824;
+    --sapphire:#2E5081;
+    --sapphire-deep:#1D3A5F;
+    --gold:#C6A44A;
+    --paper:#F2F5F8;
+    --muted:#8A97A8;
+    --rule:rgba(255,255,255,.08);
+    --maxw:1080px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--ink);
+    color:var(--paper);
+    font-family:'Lora',Georgia,serif;
+    font-size:17px;
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
+
+  /* ---------- nav ---------- */
+  nav{
+    position:fixed;top:0;left:0;right:0;z-index:50;
+    backdrop-filter:blur(14px);
+    background:rgba(11,15,23,.72);
+    border-bottom:1px solid transparent;
+    transition:border-color .4s ease, background .4s ease;
+  }
+  nav.scrolled{border-bottom-color:var(--rule)}
+  .nav-in{max-width:var(--maxw);margin:0 auto;padding:18px 28px;display:flex;align-items:center;justify-content:space-between}
+  .nav-name{font-family:'Poppins';font-weight:600;font-size:15px;letter-spacing:.01em;color:var(--paper);text-decoration:none;display:flex;align-items:center;gap:10px}
+  .nav-name svg{width:18px;height:18px;flex:none}
+  .nav-links{display:flex;gap:30px;align-items:center}
+  .nav-links a{
+    font-family:'Poppins';font-weight:400;font-size:13.5px;letter-spacing:.02em;
+    color:var(--muted);text-decoration:none;transition:color .25s;
+  }
+  .nav-links a:hover,.nav-links a:focus-visible{color:var(--paper)}
+  .nav-cta{
+    font-family:'Poppins';font-weight:500;font-size:13px;letter-spacing:.04em;
+    color:var(--gold)!important;border:1px solid rgba(198,164,74,.35);
+    padding:8px 16px;border-radius:2px;transition:background .25s,border-color .25s;
+  }
+  .nav-cta:hover{background:rgba(198,164,74,.09);border-color:rgba(198,164,74,.6)}
+  @media(max-width:720px){.nav-links a:not(.nav-cta){display:none}}
+
+  /* ---------- the through-line (signature) ---------- */
+  .spine{
+    position:fixed;left:50%;top:0;width:1px;height:100vh;
+    transform:translateX(-50%);
+    z-index:0;pointer-events:none;
+    background:linear-gradient(to bottom,transparent,var(--rule)12%,var(--rule) 88%,transparent);
+  }
+  .spine-fill{
+    position:fixed;left:50%;top:0;width:1px;
+    transform:translateX(-50%);transform-origin:top;
+    z-index:1;pointer-events:none;
+    background:linear-gradient(to bottom,rgba(198,164,74,0),var(--gold) 22%,var(--gold));
+    height:0;
+    box-shadow:0 0 10px rgba(198,164,74,.35);
+  }
+  @media(max-width:900px){.spine,.spine-fill{left:26px;transform:none}}
+
+  /* ---------- hero ---------- */
+  header{
+    min-height:100vh;display:flex;align-items:center;
+    position:relative;z-index:2;padding:120px 0 90px;
+  }
+  .crest{width:56px;height:56px;margin-bottom:34px;opacity:0;animation:rise .9s .1s forwards cubic-bezier(.22,1,.36,1)}
+  .kicker{
+    font-family:'Poppins';font-weight:500;font-size:11.5px;letter-spacing:.28em;
+    text-transform:uppercase;color:var(--gold);margin-bottom:20px;
+    opacity:0;animation:rise .9s .22s forwards cubic-bezier(.22,1,.36,1);
+  }
+  h1{
+    font-family:'Poppins';font-weight:700;
+    font-size:clamp(2.9rem,7.2vw,5.4rem);
+    line-height:.98;letter-spacing:-.035em;color:#fff;
+    opacity:0;animation:rise 1s .32s forwards cubic-bezier(.22,1,.36,1);
+  }
+  .roles{
+    font-family:'Poppins';font-weight:400;font-size:clamp(.85rem,1.8vw,1rem);
+    letter-spacing:.06em;color:var(--muted);margin-top:22px;
+    opacity:0;animation:rise 1s .44s forwards cubic-bezier(.22,1,.36,1);
+  }
+  .roles span{color:var(--sapphire);padding:0 10px}
+  .lede{
+    max-width:640px;margin-top:34px;font-size:clamp(1.05rem,2vw,1.28rem);
+    line-height:1.65;color:rgba(242,245,248,.82);
+    opacity:0;animation:rise 1s .56s forwards cubic-bezier(.22,1,.36,1);
+  }
+  .hero-cta{display:flex;gap:14px;margin-top:44px;flex-wrap:wrap;
+    opacity:0;animation:rise 1s .68s forwards cubic-bezier(.22,1,.36,1);}
+  .btn{
+    font-family:'Poppins';font-weight:500;font-size:14px;letter-spacing:.03em;
+    padding:14px 28px;border-radius:2px;text-decoration:none;transition:all .25s;
+    display:inline-block;
+  }
+  .btn-primary{background:var(--gold);color:var(--ink);}
+  .btn-primary:hover{background:#d8b661;transform:translateY(-1px)}
+  .btn-ghost{border:1px solid var(--rule);color:var(--paper)}
+  .btn-ghost:hover{border-color:rgba(255,255,255,.28);background:rgba(255,255,255,.03)}
+  @keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+
+  /* ---------- sections ---------- */
+  section{position:relative;z-index:2;padding:110px 0}
+  .eyebrow{
+    font-family:'Poppins';font-weight:500;font-size:11px;letter-spacing:.28em;
+    text-transform:uppercase;color:var(--gold);margin-bottom:22px;
+  }
+  h2{
+    font-family:'Poppins';font-weight:600;
+    font-size:clamp(1.75rem,3.8vw,2.7rem);
+    line-height:1.14;letter-spacing:-.02em;color:#fff;margin-bottom:30px;max-width:17ch;
+  }
+  .prose{max-width:660px}
+  .prose p{margin-bottom:22px;color:rgba(242,245,248,.76)}
+  .prose p:last-child{margin-bottom:0}
+  .prose strong{color:#fff;font-weight:500}
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .8s cubic-bezier(.22,1,.36,1),transform .8s cubic-bezier(.22,1,.36,1)}
+  .reveal.in{opacity:1;transform:none}
+
+  /* ---------- evidence spine (career) ---------- */
+  .ledger{margin-top:56px;border-left:1px solid var(--rule);padding-left:0}
+  .entry{
+    position:relative;padding:0 0 40px 34px;
+  }
+  .entry:last-child{padding-bottom:0}
+  .entry::before{
+    content:"";position:absolute;left:-4.5px;top:9px;
+    width:8px;height:8px;background:var(--ink);
+    border:1px solid var(--sapphire);transform:rotate(45deg);
+    transition:background .4s,border-color .4s;
+  }
+  .entry.in::before{background:var(--gold);border-color:var(--gold)}
+  .entry-year{
+    font-family:'Poppins';font-weight:500;font-size:11.5px;letter-spacing:.16em;
+    color:var(--muted);text-transform:uppercase;
+  }
+  .entry-role{font-family:'Poppins';font-weight:600;font-size:1.05rem;color:#fff;margin-top:5px}
+  .entry-note{font-size:.98rem;color:rgba(242,245,248,.62);margin-top:6px;max-width:52ch}
+
+  /* ---------- ventures ---------- */
+  .ventures{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1px;margin-top:52px;background:var(--rule)}
+  .venture{
+    background:var(--ink);padding:36px 30px;transition:background .35s;
+  }
+  .venture:hover{background:var(--ink-2)}
+  .venture-name{font-family:'Poppins';font-weight:600;font-size:1.15rem;color:#fff}
+  .venture-name .accent-a{color:#C2703D}
+  .venture-name .accent-p{color:#059669}
+  .venture-desc{font-size:.96rem;color:rgba(242,245,248,.62);margin-top:12px;line-height:1.6}
+
+  /* ---------- proof band ---------- */
+  .proof{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));
+    gap:1px;background:var(--rule);margin-top:56px;
+  }
+  .proof-cell{background:var(--ink);padding:30px 26px}
+  .proof-fig{font-family:'Poppins';font-weight:700;font-size:1.65rem;color:var(--gold);letter-spacing:-.02em}
+  .proof-lab{font-size:.9rem;color:rgba(242,245,248,.6);margin-top:8px;line-height:1.5}
+
+  /* ---------- speaking band (signature proof) ---------- */
+  .band{
+    position:relative;z-index:2;margin:0;padding:0;
+    min-height:clamp(340px,46vw,520px);
+    display:flex;align-items:center;
+    background-image:linear-gradient(to right,rgba(11,15,23,.94) 0%,rgba(11,15,23,.72) 42%,rgba(11,15,23,.30) 70%,rgba(11,15,23,.55) 100%),url('cleven_speaking.jpg');
+    background-size:cover;background-position:center right;
+    border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);
+  }
+  .band-in{max-width:var(--maxw);margin:0 auto;padding:60px 28px;width:100%}
+  .band-q{
+    font-family:'Lora',serif;font-style:italic;
+    font-size:clamp(1.3rem,2.9vw,2rem);line-height:1.42;
+    color:#fff;max-width:19ch;letter-spacing:-.01em;
+  }
+  .band-cap{
+    font-family:'Poppins';font-weight:400;font-size:12.5px;letter-spacing:.16em;
+    text-transform:uppercase;color:var(--muted);margin-top:22px;
+  }
+  .band-rule{height:2px;width:56px;background:var(--gold);margin:26px 0 0}
+
+  /* ---------- doors ---------- */
+  .doors{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:26px;margin-top:52px}
+  .door{
+    border:1px solid var(--rule);padding:34px 30px;border-radius:2px;
+    transition:border-color .35s,background .35s;
+  }
+  .door:hover{border-color:rgba(198,164,74,.32);background:rgba(198,164,74,.03)}
+  .door-n{font-family:'Poppins';font-weight:500;font-size:11px;letter-spacing:.24em;color:var(--gold);text-transform:uppercase}
+  .door-h{font-family:'Poppins';font-weight:600;font-size:1.2rem;color:#fff;margin:14px 0 12px}
+  .door-p{font-size:.97rem;color:rgba(242,245,248,.66);line-height:1.62}
+
+  /* ---------- contact ---------- */
+  .contact{text-align:center;padding:120px 0 90px}
+  .contact h2{margin:0 auto 26px;max-width:20ch}
+  .contact .prose{margin:0 auto 42px}
+  .links{display:flex;gap:32px;justify-content:center;flex-wrap:wrap;margin-top:40px}
+  .links a{
+    font-family:'Poppins';font-size:14px;color:var(--muted);text-decoration:none;
+    border-bottom:1px solid transparent;padding-bottom:3px;transition:color .25s,border-color .25s;
+  }
+  .links a:hover{color:var(--gold);border-bottom-color:rgba(198,164,74,.4)}
+  footer{
+    border-top:1px solid var(--rule);padding:34px 0;text-align:center;position:relative;z-index:2;
+  }
+  .foot{font-family:'Poppins';font-size:12.5px;color:rgba(138,151,168,.7);letter-spacing:.02em}
+
+  a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+  @media (prefers-reduced-motion:reduce){
+    *{animation:none!important;transition:none!important}
+    .reveal{opacity:1;transform:none}
+    .crest,.kicker,h1,.roles,.lede,.hero-cta{opacity:1}
+  }
+</style>
+</head>
+<body>
+
+<div class="spine" aria-hidden="true"></div>
+<div class="spine-fill" id="spineFill" aria-hidden="true"></div>
+
+<nav id="nav">
+  <div class="nav-in">
+    <a href="#top" class="nav-name">
+      <svg viewBox="0 0 100 100" aria-hidden="true">
+        <defs>
+          <linearGradient id="nl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2E5081"/><stop offset="1" stop-color="#14294A"/></linearGradient>
+          <linearGradient id="nr" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1D3A5F"/><stop offset="1" stop-color="#0B1C33"/></linearGradient>
+        </defs>
+        <polygon points="50,5 74.5,60 50,93" fill="url(#nr)"/>
+        <polygon points="50,5 50,93 25.5,60" fill="url(#nl)"/>
+        <line x1="50" y1="5" x2="50" y2="93" stroke="#C6A44A" stroke-width="2"/>
+      </svg>
+      Cleven Wright
+    </a>
+    <div class="nav-links">
+      <a href="#story">Story</a>
+      <a href="#work">Work</a>
+      <a href="#together">Work with me</a>
+      <a href="#contact" class="nav-cta">Get in touch</a>
+    </div>
+  </div>
+</nav>
+
+<header id="top">
+  <div class="wrap">
+    <svg class="crest" viewBox="0 0 100 100" aria-hidden="true">
+      <defs>
+        <linearGradient id="hl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2E5081"/><stop offset="1" stop-color="#14294A"/></linearGradient>
+        <linearGradient id="hr" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1D3A5F"/><stop offset="1" stop-color="#0B1C33"/></linearGradient>
+      </defs>
+      <polygon points="50,5 74.5,60 50,93" fill="url(#hr)"/>
+      <polygon points="50,5 50,93 25.5,60" fill="url(#hl)"/>
+      <line x1="50" y1="5" x2="50" y2="93" stroke="#C6A44A" stroke-width="2.2"/>
+    </svg>
+    <div class="kicker">Founder and CEO, Pyrigen</div>
+    <h1>Cleven Wright</h1>
+    <div class="roles">AI Strategist <span>&middot;</span> Sales Enablement Leader <span>&middot;</span> Builder</div>
+    <p class="lede">
+      I have spent 25 years turning emerging technology into results people can measure,
+      from the front line to the founder's seat. Today I build the next generation of
+      AI-powered software for human potential.
+    </p>
+    <div class="hero-cta">
+      <a href="#contact" class="btn btn-primary">Get in touch</a>
+      <a href="#work" class="btn btn-ghost">See the work</a>
+    </div>
+  </div>
+</header>
+
+<section id="story">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow">The through-line</div>
+      <h2>The work is the credential.</h2>
+    </div>
+    <div class="prose reveal">
+      <p>
+        I did not take the usual path, and that is the point. I started by knocking on doors, literally,
+        selling to whoever would open one. <strong>Nobody hands you anything in that job, so I learned to
+        earn it.</strong> I built a career from there one result at a time, no degree and no shortcut,
+        just an obsession with figuring out what actually works and then teaching it to everyone around me.
+      </p>
+      <p>
+        That path carried me from the sales floor to the executive seat, and it taught me the thing most
+        technologists miss. <strong>Technology only matters when it changes how a real person performs,
+        decides, or believes.</strong>
+      </p>
+      <p>
+        Inside a national enterprise, I led AI adoption across the organization and built SKYLAR, an AI
+        enablement solution that delivered 15 to 20 percent productivity gains. Then I did the thing
+        25 years had prepared me for. I founded Pyrigen, a studio building AI-powered products that
+        help people grow, learn, and prove what they are capable of.
+      </p>
+    </div>
+
+    <div class="ledger">
+      <div class="entry reveal">
+        <div class="entry-year">The early years</div>
+        <div class="entry-role">The knock</div>
+        <div class="entry-note">Sold door to door, nationally, business to business and direct to consumer, alongside retail management. No territory handed to me and no warm leads, just the next door. The work ethic was forged here.</div>
+      </div>
+      <div class="entry reveal">
+        <div class="entry-year">1997</div>
+        <div class="entry-role">Co-Owner, first venture</div>
+        <div class="entry-note">Ran a product sales and distribution business. Learned profit, contracts, and customers the hard way, by owning the outcome.</div>
+      </div>
+      <div class="entry reveal">
+        <div class="entry-year">2000</div>
+        <div class="entry-role">The corporate climb begins</div>
+        <div class="entry-note">Joined Boise Cascade Office Products in sales. It became OfficeMax, then Office Depot. The name on the building changed twice. I kept climbing.</div>
+      </div>
+      <div class="entry reveal">
+        <div class="entry-year">2006</div>
+        <div class="entry-role">National Sales Trainer</div>
+        <div class="entry-note">Built the onboarding and training programs that equipped sellers across the country.</div>
+      </div>
+      <div class="entry reveal">
+        <div class="entry-year">2019</div>
+        <div class="entry-role">Business Learning Advisor</div>
+        <div class="entry-note">Partnered with business leaders to diagnose performance and design what fixed it.</div>
+      </div>
+      <div class="entry reveal">
+        <div class="entry-year">2022</div>
+        <div class="entry-role">Senior Manager, Training Development</div>
+        <div class="entry-note">Led enablement for the organization, then led the case for AI adoption across the business.</div>
+      </div>
+      <div class="entry reveal">
+        <div class="entry-year">2025</div>
+        <div class="entry-role">Senior AI Business Solutions Product Manager</div>
+        <div class="entry-note">Built SKYLAR, an AI enablement solution that delivered 15 to 20 percent productivity gains.</div>
+      </div>
+      <div class="entry reveal">
+        <div class="entry-year">2026</div>
+        <div class="entry-role">Founder and CEO, Pyrigen</div>
+        <div class="entry-note">Building AI-powered software for human potential.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow">The work</div>
+      <h2>What I am building now.</h2>
+    </div>
+    <div class="prose reveal">
+      <p>
+        Pyrigen is a software studio at the intersection of applied AI and human potential.
+        It is not one product, it is a home for several, each solving a real problem with rigor and craft.
+      </p>
+    </div>
+    <div class="ventures reveal">
+      <div class="venture">
+        <div class="venture-name">Soul<span class="accent-a">Anthem</span></div>
+        <div class="venture-desc">A voice-driven companion for building real self-belief, grounded in the science of self-efficacy.</div>
+      </div>
+      <div class="venture">
+        <div class="venture-name">Prove<span class="accent-p">Mastery</span></div>
+        <div class="venture-desc">An AI learning platform that does not just teach. It proves genuine mastery and maintains it over time.</div>
+      </div>
+      <div class="venture">
+        <div class="venture-name">Empowering K12</div>
+        <div class="venture-desc">Technology that equips educators to deliver better outcomes for students with disabilities.</div>
+      </div>
+    </div>
+
+    <div class="reveal" style="margin-top:90px">
+      <div class="eyebrow">The edge</div>
+      <h2>Strategy and building, in the same person.</h2>
+    </div>
+    <div class="prose reveal">
+      <p>
+        Most people who can set AI strategy have never shipped a product, and most people who can build
+        have never sat in the executive seat. I have done both, at enterprise scale, for 25 years.
+        <strong>That combination is the whole point.</strong> I can see the outcome an organization needs,
+        design the path to it, and then actually build the thing that gets there.
+      </p>
+    </div>
+    <div class="proof reveal">
+      <div class="proof-cell">
+        <div class="proof-fig">25+ years</div>
+        <div class="proof-lab">Building sales, enablement, and AI capability</div>
+      </div>
+      <div class="proof-cell">
+        <div class="proof-fig">15 to 20%</div>
+        <div class="proof-lab">Productivity gains delivered by SKYLAR, the AI enablement solution I built</div>
+      </div>
+      <div class="proof-cell">
+        <div class="proof-fig">Front line to CEO</div>
+        <div class="proof-lab">Every rung, earned in sequence</div>
+      </div>
+      <div class="proof-cell">
+        <div class="proof-fig">Enterprise scale</div>
+        <div class="proof-lab">AI adoption led across a national B2B organization</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band" aria-label="Cleven Wright speaking">
+  <div class="band-in">
+    <div class="reveal">
+      <p class="band-q">Technology only matters when it changes how a real person performs, decides, or believes.</p>
+      <div class="band-rule"></div>
+      <div class="band-cap">On stage, on AI adoption</div>
+    </div>
+  </div>
+</section>
+
+<section id="together">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow">Work with me</div>
+      <h2>Three ways forward.</h2>
+    </div>
+    <div class="prose reveal">
+      <p>I am building Pyrigen full time, and I make room for a small number of the right opportunities.</p>
+    </div>
+    <div class="doors reveal">
+      <div class="door">
+        <div class="door-n">Invest</div>
+        <div class="door-h">Back a builder</div>
+        <div class="door-p">Pyrigen is building category-defining AI products. If you back founders who pair enterprise credibility with hands-on building, let us talk.</div>
+      </div>
+      <div class="door">
+        <div class="door-n">Hire</div>
+        <div class="door-h">The right senior mission</div>
+        <div class="door-p">For an organization serious about turning AI into real outcomes, I bring a career of translating strategy into shipped results.</div>
+      </div>
+      <div class="door">
+        <div class="door-n">Advise</div>
+        <div class="door-h">Move from talk to shipped</div>
+        <div class="door-p">I help teams get from talking about AI to shipping it, drawing on decades in sales enablement, product, and AI adoption at scale.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow">Connect</div>
+      <h2>Let us build something that matters.</h2>
+      <div class="prose">
+        <p>Whether you are investing, hiring, or looking for a partner who has actually done it, I would like to hear from you.</p>
+      </div>
+      <a href="mailto:admin@pyrigen.com" class="btn btn-primary">admin@pyrigen.com</a>
+      <div class="links">
+        <a href="https://www.linkedin.com/in/cleven-wright" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.pyrigen.com" target="_blank" rel="noopener">Pyrigen</a>
+        <a href="https://www.soulanthem.ai" target="_blank" rel="noopener">SoulAnthem</a>
+        <a href="https://www.provemastery.ai" target="_blank" rel="noopener">ProveMastery</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">&copy; 2026 Cleven Wright &nbsp;&middot;&nbsp; Little Elm, Texas</div>
+</footer>
+
+<script>
+  const nav = document.getElementById('nav');
+  const fill = document.getElementById('spineFill');
+  const docH = () => document.documentElement.scrollHeight - window.innerHeight;
+
+  function onScroll(){
+    const y = window.scrollY;
+    nav.classList.toggle('scrolled', y > 40);
+    const p = Math.min(y / Math.max(docH(),1), 1);
+    fill.style.height = (p * window.innerHeight) + 'px';
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }});
+  },{rootMargin:'0px 0px -12% 0px', threshold:.15});
+  document.querySelectorAll('.reveal').forEach((el,i)=>{
+    el.style.transitionDelay = (Math.min(i,6)*40)+'ms';
+    io.observe(el);
+  });
+</script>
+</body>
+</html>
