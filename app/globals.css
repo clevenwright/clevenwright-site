@@ -453,6 +453,10 @@ h2 {
   color: #059669;
 }
 
+.venture-name .accent-v {
+  color: #8a63ff;
+}
+
 .venture-desc {
   font-size: 0.96rem;
   color: rgba(242, 245, 248, 0.62);
