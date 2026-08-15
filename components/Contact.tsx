@@ -20,6 +20,9 @@ export default function Contact() {
             <a href="https://www.pyrigen.com" target="_blank" rel="noopener noreferrer">
               Pyrigen
             </a>
+            <a href="https://www.voicereason.ai" target="_blank" rel="noopener noreferrer">
+              VoiceReason
+            </a>
             <a href="https://www.soulanthem.ai" target="_blank" rel="noopener noreferrer">
               SoulAnthem
             </a>
