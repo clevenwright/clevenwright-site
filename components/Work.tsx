@@ -14,6 +14,20 @@ export default function Work() {
         </div>
         <div className="ventures reveal">
           <a
+            href="https://www.voicereason.ai"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="venture"
+          >
+            <div className="venture-name">
+              Voice<span className="accent-v">Reason</span>
+            </div>
+            <div className="venture-desc">
+              A spoken practice call against an AI buyer who pushes back, so reps rehearse the deal-deciding
+              conversation before it counts. The one I built from 25 years on the phone.
+            </div>
+          </a>
+          <a
             href="https://www.soulanthem.ai"
             target="_blank"
             rel="noopener noreferrer"
