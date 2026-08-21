@@ -23,8 +23,9 @@ export default function Work() {
               Voice<span className="accent-v">Reason</span>
             </div>
             <div className="venture-desc">
-              A spoken practice call against an AI buyer who pushes back, so reps rehearse the deal-deciding
-              conversation before it counts. The one I built from 25 years on the phone.
+              A spoken practice call against an AI buyer who is guarded, busy, and unconvinced, so sales
+              professionals rehearse the deal-deciding conversation before it counts. The one I built
+              from 25 years on the phone.
             </div>
           </a>
           <a
