@@ -81,7 +81,7 @@ export default function Work() {
         <div className="proof reveal">
           <div className="proof-cell">
             <div className="proof-fig">25+ years</div>
-            <div className="proof-lab">Building sales, enablement, and AI capability</div>
+            <div className="proof-lab">Teaching and developing sales professionals and sales leaders</div>
           </div>
           <div className="proof-cell">
             <div className="proof-fig">15 to 20%</div>
