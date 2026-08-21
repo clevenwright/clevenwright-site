@@ -24,8 +24,8 @@ export default function Work() {
             </div>
             <div className="venture-desc">
               A spoken practice call against an AI buyer who is guarded, busy, and unconvinced, so sales
-              professionals rehearse the deal-deciding conversation before it counts. The one I built
-              from 25 years on the phone.
+              professionals rehearse the deal-deciding conversation before it counts. The one I built from 25 years
+              of experience developing sales professionals and sales leaders.
             </div>
           </a>
           <a
