@@ -62,7 +62,8 @@ export default function Work() {
           >
             <div className="venture-name">Empowering K12</div>
             <div className="venture-desc">
-              Technology that equips educators to deliver better outcomes for students with disabilities.
+              A separate company I own, independent of the Pyrigen studio. Technology that equips
+              educators to deliver better outcomes for students with disabilities.
             </div>
           </a>
         </div>
