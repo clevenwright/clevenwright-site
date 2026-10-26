@@ -457,6 +457,10 @@ h2 {
   color: #8a63ff;
 }
 
+.venture-name .accent-b {
+  color: #2fc4b2;
+}
+
 .venture-desc {
   font-size: 0.96rem;
   color: rgba(242, 245, 248, 0.62);

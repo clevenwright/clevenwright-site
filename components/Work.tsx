@@ -29,6 +29,20 @@ export default function Work() {
             </div>
           </a>
           <a
+            href="https://beknown360.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="venture"
+          >
+            <div className="venture-name">
+              BeKnown<span className="accent-b">360</span>
+            </div>
+            <div className="venture-desc">
+              Shows a business where it turns up on Google Maps, listing sites, reviews and AI answers, in one
+              Found score, then hands the owner a plain-language plan that names who does each next move.
+            </div>
+          </a>
+          <a
             href="https://www.soulanthem.ai"
             target="_blank"
             rel="noopener noreferrer"
