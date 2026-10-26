@@ -23,6 +23,9 @@ export default function Contact() {
             <a href="https://www.voicereason.ai" target="_blank" rel="noopener noreferrer">
               VoiceReason
             </a>
+            <a href="https://beknown360.com" target="_blank" rel="noopener noreferrer">
+              BeKnown360
+            </a>
             <a href="https://www.soulanthem.ai" target="_blank" rel="noopener noreferrer">
               SoulAnthem
             </a>
