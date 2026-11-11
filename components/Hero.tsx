@@ -8,7 +8,7 @@ export default function Hero() {
         <div className="kicker">Founder and CEO, Pyrigen</div>
         <h1>Cleven Wright</h1>
         <div className="roles">
-          AI Strategist <span>&middot;</span> Sales Enablement Leader <span>&middot;</span> Builder
+          Founder <span>&middot;</span> AI Product Builder <span>&middot;</span> Enterprise AI Leader
         </div>
         <p className="lede">
           I have spent 25 years turning emerging technology into results people can measure,

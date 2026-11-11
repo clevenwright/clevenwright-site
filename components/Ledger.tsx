@@ -15,16 +15,6 @@ const entries = [
     note: "Joined Boise Cascade Office Products in sales. It became OfficeMax, then Office Depot. The name on the building changed twice. I kept climbing.",
   },
   {
-    year: "2006",
-    role: "National Sales Trainer",
-    note: "Built the onboarding and training programs that equipped sellers across the country.",
-  },
-  {
-    year: "2019",
-    role: "Business Learning Advisor",
-    note: "Partnered with business leaders to diagnose performance and design what fixed it.",
-  },
-  {
     year: "2020",
     role: "Senior Training Manager",
     note: "Took over leadership of the sales training team: the content, the delivery, and the people who delivered it.",
@@ -33,6 +23,11 @@ const entries = [
     year: "2022",
     role: "Senior Manager, Training Development",
     note: "Led enablement for the organization, then led the case for AI adoption across the business.",
+  },
+  {
+    year: "2023",
+    role: "Led AI for ODP Business",
+    note: "Built the AI strategy and brought AI agents to 1,100+ people. Win rate rose 15% for the sellers using them.",
   },
   {
     year: "2025",

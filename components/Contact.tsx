@@ -7,7 +7,7 @@ export default function Contact() {
           <h2>Let us build something that matters.</h2>
           <div className="prose">
             <p>
-              Whether you are investing, hiring, or looking for a partner who has actually done it, I would like to hear from you.
+              Whether you are investing, building, or looking for a partner who has actually done it, I would like to hear from you.
             </p>
           </div>
           <a href="mailto:hello@pyrigen.com" className="btn btn-primary">

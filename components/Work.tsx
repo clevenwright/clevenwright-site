@@ -14,19 +14,32 @@ export default function Work() {
         </div>
         <div className="ventures reveal">
           <a
-            href="https://www.voicereason.ai"
+            href="https://www.voicereason.ai/sales-coach.html"
             target="_blank"
             rel="noopener noreferrer"
             className="venture"
           >
             <div className="venture-name">
-              Voice<span className="accent-v">Reason</span>
+              Sales <span className="accent-v">Coach</span>
             </div>
             <div className="venture-desc">
-              Practice the call before it counts, on a real phone call, then a live AI coach comes on the same
-              call. Sales Coach gives teams an AI buyer built from their ICP. Interview Coach gives job seekers an
-              AI hiring manager built from their resume and the job posting. Built from 25 years of developing
-              sales professionals and sales leaders.
+              Live now, from VoiceReason.AI. Sales teams practice on a real phone call against an AI buyer built
+              from their ICP, then a live AI coach comes on the same call. Built from 25 years of developing sales
+              professionals and sales leaders.
+            </div>
+          </a>
+          <a
+            href="https://www.voicereason.ai/interview-coach.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="venture"
+          >
+            <div className="venture-name">
+              Interview <span className="accent-v">Coach</span>
+            </div>
+            <div className="venture-desc">
+              Live now, from VoiceReason.AI. Add a resume and the job posting, and an AI hiring manager interviews
+              you for that role on a real phone call. Then a live AI coach comes on the same call.
             </div>
           </a>
           <a
@@ -39,7 +52,7 @@ export default function Work() {
               NameCalled<span className="accent-b">360</span>
             </div>
             <div className="venture-desc">
-              Done-for-you visibility for local, service-area and online businesses. Every week it checks Google
+              Live now. Done-for-you visibility for local, service-area and online businesses. Every week it checks Google
               Maps, review sites and AI answers like ChatGPT, shows where the business stands in one Found score,
               and our team does the work to close the gaps.
             </div>
@@ -54,7 +67,7 @@ export default function Work() {
               Rev<span style={{ color: "#f5a524" }}>Thunder</span>
             </div>
             <div className="venture-desc">
-              Our partner and revenue platform. Sales partners, affiliates and agencies join free, earn commission
+              Live now. Our partner and revenue platform. Sales partners, affiliates and agencies join free, earn commission
               on sales we collect, and get a ready-made sales kit for each product.
             </div>
           </a>
@@ -112,8 +125,8 @@ export default function Work() {
         </div>
         <div className="proof reveal">
           <div className="proof-cell">
-            <div className="proof-fig">25+ years</div>
-            <div className="proof-lab">Teaching and developing sales professionals and sales leaders</div>
+            <div className="proof-fig">15%</div>
+            <div className="proof-lab">Win-rate lift for the sellers using the AI agents I rolled out</div>
           </div>
           <div className="proof-cell">
             <div className="proof-fig">15 to 20%</div>
@@ -124,8 +137,8 @@ export default function Work() {
             <div className="proof-lab">Every rung, earned in sequence</div>
           </div>
           <div className="proof-cell">
-            <div className="proof-fig">Enterprise scale</div>
-            <div className="proof-lab">AI adoption led across a national B2B organization</div>
+            <div className="proof-fig">1,100+</div>
+            <div className="proof-lab">People brought onto AI agents across a national B2B organization</div>
           </div>
         </div>
       </div>
