@@ -23,23 +23,39 @@ export default function Work() {
               Voice<span className="accent-v">Reason</span>
             </div>
             <div className="venture-desc">
-              A spoken practice call against an AI buyer who is guarded, busy, and unconvinced, so sales
-              professionals rehearse the deal-deciding conversation before it counts. The one I built from 25 years
-              of experience developing sales professionals and sales leaders.
+              Practice the call before it counts, on a real phone call, then a live AI coach comes on the same
+              call. Sales Coach gives teams an AI buyer built from their ICP. Interview Coach gives job seekers an
+              AI hiring manager built from their resume and the job posting. Built from 25 years of developing
+              sales professionals and sales leaders.
             </div>
           </a>
           <a
-            href="https://beknown360.com"
+            href="https://namecalled360.com"
             target="_blank"
             rel="noopener noreferrer"
             className="venture"
           >
             <div className="venture-name">
-              BeKnown<span className="accent-b">360</span>
+              NameCalled<span className="accent-b">360</span>
             </div>
             <div className="venture-desc">
-              Shows a business where it turns up on Google Maps, listing sites, reviews and AI answers, in one
-              Found score, then hands the owner a plain-language plan that names who does each next move.
+              Done-for-you visibility for local, service-area and online businesses. Every week it checks Google
+              Maps, review sites and AI answers like ChatGPT, shows where the business stands in one Found score,
+              and our team does the work to close the gaps.
+            </div>
+          </a>
+          <a
+            href="https://revthunder.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="venture"
+          >
+            <div className="venture-name">
+              Rev<span style={{ color: "#f5a524" }}>Thunder</span>
+            </div>
+            <div className="venture-desc">
+              Our partner and revenue platform. Sales partners, affiliates and agencies join free, earn commission
+              on sales we collect, and get a ready-made sales kit for each product.
             </div>
           </a>
           <a

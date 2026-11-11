@@ -11,7 +11,7 @@ export default function Nav() {
         <div className="nav-links">
           <a href="#story">Story</a>
           <a href="#work">Work</a>
-          <a href="#together">Work with me</a>
+          <a href="#together">Partner with us</a>
           <a href="#contact" className="nav-cta">
             Get in touch
           </a>
