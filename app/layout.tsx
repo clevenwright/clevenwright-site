@@ -17,11 +17,11 @@ const lora = Lora({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.clevenwright.com"),
-  title: "Cleven Wright — Founder and CEO, Pyrigen",
+  title: "Cleven Wright | Founder and CEO, Pyrigen",
   description:
     "Founder and CEO of Pyrigen. 25+ years turning emerging technology into results people can measure, from the front line to the founder's seat.",
   openGraph: {
-    title: "Cleven Wright — Founder and CEO, Pyrigen",
+    title: "Cleven Wright | Founder and CEO, Pyrigen",
     description:
       "Founder and CEO of Pyrigen. 25+ years turning emerging technology into results people can measure, from the front line to the founder's seat.",
     url: "https://www.clevenwright.com",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Cleven Wright — Founder and CEO, Pyrigen",
+    title: "Cleven Wright | Founder and CEO, Pyrigen",
     description:
       "Founder and CEO of Pyrigen. 25+ years turning emerging technology into results people can measure, from the front line to the founder's seat.",
     images: ["/clevenwright_og.png"],
