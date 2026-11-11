@@ -64,7 +64,7 @@ export default function Work() {
             className="venture"
           >
             <div className="venture-name">
-              Rev<span style={{ color: "#f5a524" }}>Thunder</span>
+              Rev<span style={{ color: "#22D3EE" }}>Thunder</span>
             </div>
             <div className="venture-desc">
               Live now. Our partner and revenue platform. Sales partners, affiliates and agencies join free, earn commission
