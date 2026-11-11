@@ -25,6 +25,11 @@ const entries = [
     note: "Partnered with business leaders to diagnose performance and design what fixed it.",
   },
   {
+    year: "2020",
+    role: "Senior Training Manager",
+    note: "Took over leadership of the sales training team: the content, the delivery, and the people who delivered it.",
+  },
+  {
     year: "2022",
     role: "Senior Manager, Training Development",
     note: "Led enablement for the organization, then led the case for AI adoption across the business.",
